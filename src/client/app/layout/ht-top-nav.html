@@ -1,0 +1,67 @@
+<nav class="navbar navbar-default visible-xs mobile-nav">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header" ng-click="vm.showMenu = !vm.showMenu">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""/></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"
+             ng-class="{'show-menu' : !!vm.showMenu}">
+            <ul class="nav navbar-nav">
+                <li><a href="#"><i class="glyphicon glyphicon-user"></i> Hesabım</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-send"></i>  Rezervasyonlarım</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-heart"></i>  Favorilerim</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-cog"></i>  Ayarlar</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-log-out"></i>  Çıkış Yap</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+
+
+<nav class="navbar navbar ets-navbar hidden-xs">
+
+    <div class="navbar-header">
+        <a href="/" class="navbar-brand">
+            <img src="images/logo.png" alt=""/>
+        </a>
+        <span class="phone">
+            444 0 387
+        </span>
+    </div>
+
+    <div class="navbar-collapse collapse">
+        <div class="pull-right navbar-logo">
+            <ul class="nav navbar-nav pull-right">
+                <li class="dropdown"
+                    ng-click="vm.dropDownOpen = !vm.dropDownOpen ">
+                    <a class="profile-image">
+                        <img src="images/profile.jpg" alt=""/>  Burak Öztırpan
+                        <i class="glyphicon  glyphicon-menu-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu"
+                        ng-class="{'dropDownOpen' : !!vm.dropDownOpen}">
+                        <li><a href="#"><i class="glyphicon glyphicon-user"></i> Hesabım</a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-send"></i>  Rezervasyonlarım</a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-heart"></i>  Favorilerim</a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-cog"></i>  Ayarlar</a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-log-out"></i>  Çıkış Yap</a></li>
+                    </ul>
+
+
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+</nav>

@@ -1,0 +1,207 @@
+<div ng-controller="ShellController as vm">
+    <header>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <ht-top-nav navline="vm.navline"></ht-top-nav>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="wrapper">
+
+        <!-- top -->
+        <div class="row">
+            <div class="col-lg-10 col-sm-10 col-md-10 post-header">
+                <h3>Amsterdam Turu</h3>
+                <span>Pegasus Hava Yolları | İstanbul Sabiha Gökçen Havaalanı Kalkışlı, Vizeli</span>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+
+                <div class="row">
+                    <button class="btn-default btn disabled col-lg-3 col-xs-2 col-lg-offset-0 col-xs-offset-1">
+                        <i class="glyphicon glyphicon-heart"></i>
+                    </button>
+
+                    <button class="btn btn-success col-lg-8 col-lg-offset-1 col-xs-7 col-lg-offset-1 col-xs-offset-1">
+                        SATIN AL
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- imageContent -->
+        <div class="image-content row">
+            <div class="col-lg-10 col-xs-12 col-md-12 col-sm-12 image-wrapper">
+                <img ng-src="{{vm.selectedImage}}" alt="" class="large-img"/>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 visible-lg">
+                <div class="row">
+
+                    <div class="col-lg-6 thumb-image"
+                         ng-click="vm.selectImage(imageIndex)"
+                         ng-class="{'half-opacity' : imageIndex === vm.halfOpacity}"
+                         ng-repeat="imageIndex in vm.images">
+                        <img ng-src="{{'images/thumb/' + imageIndex + '.jpg'}}" alt=""/>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Description -->
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="descriptions">
+                    <li>AtlasGlobal Hava Yolları tarifeli seferleri ile Atatürk Havalimanı-Amsterdam Schiphol Havalimanı
+                        gidiş, Amsterdam Schiphol Havalimanı-Atatürk Havalimanı dönüş ekonomi sınıfı uçak bileti.
+                    </li>
+                    <li>4* Corendon Vitality otelde 2 gece oda-kahvaltı konaklama.</li>
+                    <li>Alan-otel-alan transferleri.</li>
+                    <li>Havalimanı vergisi ve hizmet bedeli.</li>
+                    <li>Zorunlu Seyahat Sigortası (Mesleki sorumluluk sigortasıdır.)
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tour Info -->
+        <div class="row">
+            <div class="col-lg-12 col-xs-12">
+                <h3>Tur Programı</h3>
+            </div>
+
+            <div class="tour-content">
+                <div class="col-lg-2 col-xs-12 day-number">1. GÜN</div>
+                <div class="col-lg-10 col-xs-12 day-info">
+                    <p>Atatürk Havalimanı Dış Hatlar Terminali 'nde bilet, bagaj ve pasaport işlemlerinin ardından AtlasGlobal
+                        Havayolları’ nın tarifeli seferi ile <b>Amsterdam'a</b> hareket. Amsterdam'a varışımızın ardından otelimize
+                        transfer ve yerleşme. Serbest zaman. Geceleme 4* Corendon Vitality otelinizde.Atatürk Havalimanı Dış Hatlar Terminali 'nde bilet, bagaj ve pasaport işlemlerinin ardından AtlasGlobal
+                        Havayolları’ nın tarifeli seferi ile <b>Amsterdam'a</b> hareket. Amsterdam'a varışımızın ardından otelimize
+                        transfer ve yerleşme. Serbest zaman. Geceleme 4* Corendon Vitality otelinizde.
+                    </p>
+                    <div class="extra-tour">
+                        <span class="extra-span"><b>Ekstra Gezi : </b> Kanallar Gezisi <span>20 Euro</span></span>
+                        Sabah kahvaltısının ardından günü dilediğiniz gibi değerlendirebilirsiniz. Geceleme 4* Corendon
+                        Vitality otelinizde, Dış Hatlar Terminali 'nde bilet, bagaj ve pasaport işlemlerinin ardından AtlasGlobal
+                        Havayolları’ nın tarifeli seferi ile.
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="tour-content">
+                <div class="col-lg-2 col-xs-12 day-number">2. GÜN</div>
+                <div class="col-lg-10 col-xs-12 day-info">
+
+                    <p>Atatürk Havalimanı Dış Hatlar Terminali 'nde bilet, bagaj ve pasaport işlemlerinin ardından AtlasGlobal
+                        Havayolları’ nın tarifeli seferi ile <b>Amsterdam'a</b> hareket. Amsterdam'a varışımızın ardından otelimize
+                        transfer ve yerleşme. Serbest zaman. Geceleme 4* Corendon Vitality otelinizde.Atatürk Havalimanı Dış Hatlar Terminali 'nde bilet, bagaj ve pasaport işlemlerinin ardından AtlasGlobal
+                        Havayolları’ nın tarifeli seferi ile <b>Amsterdam'a</b> hareket. Amsterdam'a varışımızın ardından otelimize
+                        transfer ve yerleşme. Serbest zaman. Geceleme 4* Corendon Vitality otelinizde.
+                    </p>
+
+                    <div class="extra-tour">
+                        <span class="extra-span"><b>Ekstra Gezi : </b> Kanallar Gezisi <span>20 Euro</span></span>
+                        Sabah kahvaltısının ardından günü dilediğiniz gibi değerlendirebilirsiniz. Geceleme 4* Corendon
+                        Vitality otelinizde, Dış Hatlar Terminali 'nde bilet, bagaj ve pasaport işlemlerinin ardından AtlasGlobal
+                        Havayolları’ nın tarifeli seferi ile.
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="tour-content">
+                <div class="col-lg-2 day-number">3. GÜN</div>
+                <div class="col-lg-10 day-info">
+
+                    <p>Atatürk Havalimanı Dış Hatlar Terminali 'nde bilet, bagaj ve pasaport işlemlerinin ardından AtlasGlobal
+                        Havayolları’ nın tarifeli seferi ile <b>Amsterdam'a</b> hareket. Amsterdam'a varışımızın ardından otelimize
+                        transfer ve yerleşme. Serbest zaman. Geceleme 4* Corendon Vitality otelinizde.Atatürk Havalimanı Dış Hatlar Terminali 'nde bilet, bagaj ve pasaport işlemlerinin ardından AtlasGlobal
+                        Havayolları’ nın tarifeli seferi ile <b>Amsterdam'a</b> hareket. Amsterdam'a varışımızın ardından otelimize
+                        transfer ve yerleşme. Serbest zaman. Geceleme 4* Corendon Vitality otelinizde.
+                    </p>
+
+                    <div class="extra-tour">
+                        <span class="extra-span"><b>Ekstra Gezi : </b> Kanallar Gezisi <span>20 Euro</span></span>
+                        Sabah kahvaltısının ardından günü dilediğiniz gibi değerlendirebilirsiniz. Geceleme 4* Corendon
+                        Vitality otelinizde, Dış Hatlar Terminali 'nde bilet, bagaj ve pasaport işlemlerinin ardından AtlasGlobal
+                        Havayolları’ nın tarifeli seferi ile.
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="tour-content">
+                <div class="col-lg-2 day-number">4. GÜN</div>
+                <div class="col-lg-10 day-info">
+
+                    <p>Atatürk Havalimanı Dış Hatlar Terminali 'nde bilet, bagaj ve pasaport işlemlerinin ardından AtlasGlobal
+                        Havayolları’ nın tarifeli seferi ile <b>Amsterdam'a</b> hareket. Amsterdam'a varışımızın ardından otelimize
+                        transfer ve yerleşme. Serbest zaman. Geceleme 4* Corendon Vitality otelinizde.Atatürk Havalimanı Dış Hatlar Terminali 'nde bilet, bagaj ve pasaport işlemlerinin ardından AtlasGlobal
+                        Havayolları’ nın tarifeli seferi ile <b>Amsterdam'a</b> hareket. Amsterdam'a varışımızın ardından otelimize
+                        transfer ve yerleşme. Serbest zaman. Geceleme 4* Corendon Vitality otelinizde.
+                    </p>
+
+                    <div class="extra-tour">
+                        <span class="extra-span"><b>Ekstra Gezi : </b> Kanallar Gezisi <span>20 Euro</span></span>
+                        Sabah kahvaltısının ardından günü dilediğiniz gibi değerlendirebilirsiniz. Geceleme 4* Corendon
+                        Vitality otelinizde, Dış Hatlar Terminali 'nde bilet, bagaj ve pasaport işlemlerinin ardından AtlasGlobal
+                        Havayolları’ nın tarifeli seferi ile.
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Comment contnet -->
+        <div class="row">
+
+            <div class="col-lg-12 col-xs-12">
+                <h4>Yorumlar</h4>
+            </div>
+
+                <div class="col-lg-12 col-xs-12 comment"
+                     ng-repeat="comment in vm.comments track by $index">
+                    <span class="subcriber">{{comment.username}}</span>
+                    {{comment.comment}}
+                </div>
+
+            </div>
+
+        <!-- Send Comment -->
+        <div class="row comment-wrapper">
+            <div class="col-lg-12 col-xs-12 send-comment-header">
+                <h4>Yorum Gönder</h4>
+            </div>
+
+            <div class="form-group">
+
+                <div class="row">
+                    <div class="col-lg-4 col-xs-12">
+                        <textarea ng-model="vm.comment" class="form-control" name="" id="" cols="30" rows="10" placeholder="Yorumunuz.."></textarea>
+                    </div>
+                </div>
+                <div class="row username">
+                    <div class="col-lg-4 col-xs-12">
+                        <input ng-model="vm.username" class="form-control" placeholder="Adınız Soyadınız" type="text"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-xs-12">
+                        <button class="btn btn-success"
+                                ng-click="vm.sendComment()">GÖNDER</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>

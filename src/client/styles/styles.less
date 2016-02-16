@@ -1,0 +1,275 @@
+@color_background: #EBEBEB;
+@color_bold: #B5B5B5;
+
+
+@media screen and (max-width: 1100px) {
+    .image-content {
+        margin-top:10px;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+
+    .wrapper,.navbar {
+        margin: 0 auto;
+        min-width: 100% !important;
+    }
+
+    body {
+        background-color: #FFF !important;
+    }
+
+    .image-content {
+        margin-top:10px !important;
+    }
+
+    .image-wrapper {
+        padding: 0;
+    }
+
+    .wrapper {
+        margin-top: 0 !important;
+        padding: 5px;
+        overflow:hidden;
+    }
+
+    .day-number {
+        text-align: left !important;
+    }
+
+    .extra-tour {
+        margin: 0 0 15px 0 !important;
+        padding: 15px !important;
+    }
+
+    .comment {
+        padding: 15px 0 15px 15px !important;
+        font-size: 12px;
+        span {
+            font-size:14px;
+        }
+    }
+
+    .comment-wrapper {
+        margin-top:20px;
+        padding: 15px;
+    }
+
+    header {
+        overflow:hidden;
+    }
+
+    .tour-content {
+        width:100%;
+        padding:0 0px 0 0px;
+        margin: 0;
+    }
+
+    .day-info {
+        padding : 0;
+        border: none !important;
+
+        p {
+            padding:15px !important;
+        }
+    }
+
+}
+
+
+
+.mobile-nav {
+    img {
+        width: 110px;
+    }
+}
+
+.show-menu {
+    display: block;
+}
+
+
+body {
+    background-color: @color_background;
+}
+
+header {
+    background-color:#FFF;
+    box-shadow: 1px 1px 1px #AFADAD;
+}
+
+.wrapper,.navbar {
+        margin: 0 auto;
+        max-width: 960px;
+}
+
+.wrapper {
+    margin-top:40px;
+}
+
+.dropDownOpen {
+    display:inline-block;
+}
+
+.dropdown-menu {
+    margin-top:10px !important;
+
+    &:after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-bottom: 7px solid #FFF;
+        position: absolute;
+        top: -7px;
+        left: 50%;
+    }
+
+    a {
+        padding:10px 20px !important
+    }
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    background-color:red;
+    color: #FFF;
+}
+
+.phone {
+    font-size: 25px;
+    font-weight: bold;
+    color: #A0A0A0;
+    /* color: black; */
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+.navbar-logo {
+    cursor: pointer;
+
+    .profile-image {
+
+        img {
+            border-radius: 100%;
+            width: 30px;
+        }
+
+        color:black;
+    }
+
+}
+
+.post-header {
+    h2 {
+        margin: 0;
+        padding:0;
+    }
+
+    span {
+        font-size: 12px;
+        color: #B5B5B5;
+    }
+}
+
+.large-img {
+    width: 100%;
+}
+
+.thumb-image {
+
+    img {
+        width:100%;
+    }
+
+    padding: 2px;
+    cursor: pointer;
+}
+
+.half-opacity {
+    opacity: 0.5;
+    padding: 0;
+    border:2px solid green;
+}
+
+
+.descriptions {
+    padding: 15px;
+    margin: 0;
+
+    li {
+        padding:5px 0;
+        line-height:14px;
+    }
+
+}
+
+
+.day-number {
+    color: @color_bold;
+    text-align:center;
+    font-size:18px;
+}
+
+.tour-content {
+    margin-bottom: 30px;
+
+    .day-info {
+        border-left: 2px solid @color_bold;
+
+        .extra-tour {
+            width: 100%;
+            display: inline-block;
+            border:1px solid #DDD;
+            border-radius:3px;
+            background-color: lightyellow;
+            padding:6px;
+            font-size:12px;
+            line-height:12px;
+            margin:0px;
+
+            .extra-span {
+
+                display:inline-block;
+                width: 100%;
+                margin-bottom:5px;
+
+                span {
+                    color: green;
+                }
+
+            }
+
+        }
+    }
+}
+
+.comment {
+
+    border-bottom:1px solid #DDD;
+    padding:10px 20px;
+
+    .subcriber {
+        font-weight:bold;
+        display:block;
+    }
+}
+
+.username {
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+.comment-wrapper {
+
+    padding: 0 20px;
+
+    textarea {
+        height:100px;
+    }
+}
+
+.send-comment-header {
+    padding-left: 0;
+}
